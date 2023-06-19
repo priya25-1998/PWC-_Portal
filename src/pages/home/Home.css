@@ -1,0 +1,78 @@
+.Menu {
+    display: flex;
+    background-color: #403759;
+    height: 100vh;
+    width: 20vw;
+    flex-direction: column;
+}
+
+.Menu-brand-div {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+}
+
+.Menu-brand-image {
+    width: 180px;
+    height: 19px;
+    margin-left: 24;
+    margin-right: 24;
+}
+
+.Menu-options-box {
+    height: 80vh;
+    width: 100%;
+}
+
+.Menu-options-list-item {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Menu-options-list-icon {
+    min-width: 35px;
+    color: white;
+}
+
+.Menu-options-list-text {
+    color: white;
+}
+
+.Menu-profile-div {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    flex-direction: row;
+}
+
+.Menu-profile-avatar-div {
+    flex: 0.2;
+    margin-left: 16px;
+}
+
+.Menu-profile-avatar-logo {
+    width: 18;
+    height: 18;
+    background-color: #5D55BF;
+}
+
+.Menu-profile-avatar-text {
+    align-self: center;
+    font-size: 8;
+}
+
+.Menu-profile-text-div {
+    flex: 0.8;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-right: 24;
+}
+
+.Menu-profile-text {
+    align-self: center;
+    color: white;
+}
