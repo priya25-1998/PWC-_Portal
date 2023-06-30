@@ -1,0 +1,12 @@
+[
+    {
+      "key": "OptimizationStrategy",
+      "reportName": "Optimization Strategy",
+      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/OptimizationStrategy.csv"
+    },
+    {
+      "key": "ActionRecommendation",
+      "reportName": "Issues associated with the Theme",
+      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/Action_Recommendations_File.csv"
+    }
+]
