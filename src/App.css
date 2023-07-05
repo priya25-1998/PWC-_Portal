@@ -71,13 +71,16 @@
 .report-header {
   display: flex;
   align-items: center;
-  margin-left: 10px;
 }
 
 .report-name {
-  margin-right: 10px;
-  margin-left: 20px;
-  color: #3dbfcb;
+  font-family: 'Verdana', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: Steelblue;
+  text-shadow: 2px 2px 0px #333;
 }
 .filter-item {
   display: inline-block;
