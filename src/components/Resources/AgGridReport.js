@@ -4,10 +4,10 @@ import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-alpine.css";
 import ReportDetails from "./ReportDetails.json";
 import { LicenseManager } from "ag-grid-enterprise";
-
 LicenseManager.setLicenseKey(
-  "MTY4ODA3OTYwMDAwMA==5266e2b19455d0b5c7c8c52bf6367755"
-);
+  "[TRIAL]_this_AG_Grid_Enterprise_key_( AG-043118 )_is_granted_for_evaluation_only___Use_in_production_is_not_permitted___Please_report_misuse_to_( legal@ag-grid.com )___For_help_with_purchasing_a_production_key_please_contact_( info@ag-grid.com )___All_FrontEnd_JavaScript_developers_working_on_the_application_would_need_to_be_licensed___This_key_will_deactivate_on_( 31 July 2023 )____[v2]_MTY5MDc1ODAwMDAwMA==f7deb9985cb10bc1921d8a43ac3c1b44");
+
+
 
 function AgGridReport() {
   const [rowData, setRowData] = useState([]);
@@ -118,21 +118,21 @@ function AgGridReport() {
     setRowData(filteredData);
   };
 
-  const navigateToDetails = (id, url) => {
-    console.log("Navigating to details for each row using a URL");
-    window.location.href = url;
-  };
+  // const navigateToDetails = (id, url) => {
+  //   console.log("Navigating to details for each row using a URL");
+  //   window.location.href = url;
+  // };
 
   const popupParent = useMemo(() => {
     return document.body;
   }, []);
 
-  function goBack() {
-    window.history.back();
-  }
+  // function goBack() {
+  //   window.history.back();
+  // }
 
   return (
-    <div id="root" className="ag-theme-alpine" style={{ height: "100vh", width: "99vw" }}>
+    <div id="root" className="ag-theme-alpine" style={{ height: "82vh", width: "99vw" }}>
       <div className="report-header">
         {/* <div>
           <button className="back-button" onClick={goBack}>
@@ -171,8 +171,8 @@ function AgGridReport() {
             field: header,
             headerName: header,
             filter: true,
-            // chartDataType: "category",
-            chartDataType: "series",
+            chartDataType: "category",
+            //chartDataType: "series",
             enableRowGroup: true,
             enablePivot: true,
             enableValue: true,
@@ -226,7 +226,6 @@ function AgGridReport() {
         }}
         statusBar={{
           statusPanels: [
-            { statusPanel: "agTotalRowCountComponent", align: "left" },
             { statusPanel: "agSelectedRowCountComponent", align: "left" },
             // { statusPanel: "agAggregationComponent", align: "right" },
           ],
