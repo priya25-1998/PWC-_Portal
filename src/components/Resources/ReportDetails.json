@@ -6,52 +6,52 @@
     },
 
     {
-      "key": "Issues with No Actions",
+      "key": "IssueswithNoActions",
       "reportName": "Issues with No Actions",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Issues_with_no_Actions.csv"
     },
     {
-      "key": "Issue by Type",
+      "key": "IssuebyType",
       "reportName": "Issue by Type",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Issues_by_Type.csv"
     },
     {
-      "key": "Issues with No GRC Connections",
+      "key": "IssueswithNoGRC Connections",
       "reportName": "Issues with No GRC Connections",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Issues_with_no_GRC_Connections.csv"
     },
     {
-      "key": "Issues mapped to GRC Objects",
+      "key": "IssuesmappedtoGRCObjects",
       "reportName": "Issues mapped to GRC Objects",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Issues_mapped_to_GRC_Objects.csv"
     },
     {
-      "key": "Trending Issues",
+      "key": "TrendingIssues",
       "reportName": "Trending Issues",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Trending_Issues.csv"
     },
     {
-      "key": "Action Recommendations",
+      "key": "ActionRecommendations",
       "reportName": "Action Recommendations",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Action_Recommendations.csv"
     },
     {
-      "key": "Control Recommendations",
+      "key": "ControlRecommendations",
       "reportName": "Control Recommendations",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Control_Recommendations.csv"
     },
     {
-      "key": "Risk Recommendations",
+      "key": "RiskRecommendations",
       "reportName": "Risk Recommendations",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Risk_Recommendations.csv"
     },
     {
-      "key": "Duplicate Issues",
+      "key": "DuplicateIssues",
       "reportName": "Duplicate Issues",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Duplicate_Issues.csv"
     },
     {
-      "key": "Duplicate Issue Description Details",
+      "key": "DuplicateIssueDescriptionDetails",
       "reportName": "Duplicate Issue Description Details",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Duplicate_Issue_Description.csv"
     },
@@ -61,7 +61,7 @@
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Similar_Issues.csv"
     },
     {
-      "key": "Similar Issue Description Details",
+      "key": "SimilarIssueDescriptionDetails",
       "reportName": "Similar Issue Description Details",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Similar_Issue_Description.csv"
     }
