@@ -56,7 +56,7 @@
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Duplicate_Issue_Description.csv"
     },
     {
-      "key": "Similar Issues",
+      "key": "SimilarIssues",
       "reportName": "Similar Issues",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Similar_Issues.csv"
     },
