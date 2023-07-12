@@ -1,8 +1,8 @@
 [
     {
-      "key": "IssueToActionsMapping",
+      "key": "IssueToActions",
       "reportName": "Issues To Actions Mapping",
-      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Issues_to_Actions_Mapping.csv"
+      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Issues_to_Actions.csv"
     },
 
     {
@@ -46,23 +46,9 @@
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Risk_Recommendations.csv"
     },
     {
-      "key": "DuplicateIssues",
+      "key": "DuplicateIssuesdata",
       "reportName": "Duplicate Issues",
-      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Duplicate_Issues.csv"
-    },
-    {
-      "key": "DuplicateIssueDescriptionDetails",
-      "reportName": "Duplicate Issue Description Details",
-      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Duplicate_Issue_Description.csv"
-    },
-    {
-      "key": "SimilarIssues",
-      "reportName": "Similar Issues",
-      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Similar_Issues.csv"
-    },
-    {
-      "key": "SimilarIssueDescriptionDetails",
-      "reportName": "Similar Issue Description Details",
-      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Similar_Issue_Description.csv"
+      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Duplicate_Issue_data.csv"
     }
+    
 ]
