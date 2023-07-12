@@ -49,6 +49,16 @@
       "key": "DuplicateIssuesdata",
       "reportName": "Duplicate Issues",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Duplicate_Issue_data.csv"
+    },
+    {
+      "key": "PreventiveDetective",
+      "reportName": "Preventive Detective Controls",
+      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/Control_Canvas_PWC/Preventive_Detective.csv"
+    },
+    {
+      "key": "ControlAssessment",
+      "reportName": "Control Assessment",
+      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/Control_Canvas_PWC/Control_Assessment.csv"
     }
     
 ]
