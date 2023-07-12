@@ -16,7 +16,7 @@
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Issues_by_Type.csv"
     },
     {
-      "key": "IssueswithNoGRC Connections",
+      "key": "IssueswithNoGRCConnections",
       "reportName": "Issues with No GRC Connections",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Issues_with_no_GRC_Connections.csv"
     },
