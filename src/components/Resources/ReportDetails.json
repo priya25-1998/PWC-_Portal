@@ -61,6 +61,17 @@
       "key": "IssueswithTheme",
       "reportName": " Issues Associated with Theme",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Issues_with_Theme.csv"
+    },
+
+    {
+      "key": "controlmetadataaggrid",
+      "reportName": "Recommended Controls Details",
+      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/Control_Canvas_PWC/control_metadata_aggrid_parent.csv"
+    },
+    {
+      "key": "controlmetadataaggridtesting",
+      "reportName": "Control Testing Details For Selected Control",
+      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/Control_Canvas_PWC/control_metadata_aggrid_child.csv"
     }
 
 
