@@ -59,6 +59,12 @@
       "key": "SimilarDuplicateIssues",
       "reportName": " Similar Duplicate Issues",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Similar_Duplicates_pwc.csv"
+    },
+
+    {
+      "key": "IssueswithTheme",
+      "reportName": " Issues Associated with Theme",
+      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Issues_with_Theme.csv"
     }
 
 
