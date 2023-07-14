@@ -38,13 +38,9 @@
     {
       "key": "ControlRecommendations",
       "reportName": "Control Recommendations",
-      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Control_Recommendations.csv"
+      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/control_recommendation_pwc.csv"
     },
-    {
-      "key": "RiskRecommendations",
-      "reportName": "Risk Recommendations",
-      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Risk_Recommendations.csv"
-    },
+    
     {
       "key": "PreventiveDetective",
       "reportName": "Preventive Detective Controls",
@@ -58,7 +54,7 @@
     {
       "key": "SimilarDuplicateIssues",
       "reportName": " Similar Duplicate Issues",
-      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Similar_Duplicates_pwc.csv"
+      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Similar_Duplicates_pwc.csvv"
     },
 
     {
