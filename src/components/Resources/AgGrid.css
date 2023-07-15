@@ -1,0 +1,12 @@
+
+.ag-theme-alpine .ag-tooltip {
+    max-width: 400px; 
+    max-height: 400px; 
+    overflow-y: auto;
+  }
+  
+  .ag-theme-alpine .ag-tooltip-content {
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  

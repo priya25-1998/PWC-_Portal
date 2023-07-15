@@ -4,9 +4,8 @@ import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-alpine.css";
 import ReportDetails from "./ReportDetails.json";
 import csvtojson from 'csvtojson';
-
+import "./AgGrid.css"
 import { LicenseManager } from "ag-grid-enterprise";
-
 LicenseManager.setLicenseKey(
   "[TRIAL]_this_AG_Grid_Enterprise_key_( AG-043118 )_is_granted_for_evaluation_only___Use_in_production_is_not_permitted___Please_report_misuse_to_( legal@ag-grid.com )___For_help_with_purchasing_a_production_key_please_contact_( info@ag-grid.com )___All_FrontEnd_JavaScript_developers_working_on_the_application_would_need_to_be_licensed___This_key_will_deactivate_on_( 31 July 2023 )____[v2]_MTY5MDc1ODAwMDAwMA==f7deb9985cb10bc1921d8a43ac3c1b44");
 
@@ -170,36 +169,69 @@ LicenseManager.setLicenseKey(
     return isNumeric ? "series" : "category";
   };
 
-  const columnDefs = [
-    {
-      field: "",
-      headerName: "",
-      checkboxSelection: true,
-      headerCheckboxSelection: true,
-      rowDrag: true,
-      width: 60,
-      // minWidth: 50,
-      // maxWidth: 50,
-    },
-    ...headers.map((header) => {
-      //const shouldEnableNavigation = reportName === "Risk Recommendations"  && header === "Submit" ;
-  
-      return {
-        field: header,
-        headerName: header,
-        filter: true,
-        chartDataType: getChartDataType(header),
-        // cellRenderer: shouldEnableNavigation ? navigateToDetails(header) : false,
-        cellRenderer:navigateToDetails(header),
-        enableRowGroup: true,
-        enablePivot: true,
-        enableValue: true,
-        width: 300,
-        // minWidth: 100,
-        // maxWidth: 400,
-      };
-    }),
-  ];
+  const IDColumns = ['Issue ID', 'Action ID', 'Issue Identified On','Issue Closed On','Issue Status','Primary Issue ID','Secondary Issue ID','Label','Score'];
+  const getColumnWidth = (header) => {
+    if (IDColumns.includes(header)) {
+      return 180;
+    } else {
+      return 500;
+    }
+  };
+
+  const columnsWithWrapText = ["Issue Description", "Issue Title", "Action Title","Action Description",'Issue Theme'];
+const shouldApplyWrapText = (column) => {
+  return columnsWithWrapText.includes(column);
+};
+
+const getColumnDefs = () => {
+  return headers.map((header) => ({
+    field: header,
+    headerName: header,
+    filter: true,
+    chartDataType: getChartDataType(header),
+    cellRenderer: navigateToDetails(header),
+    enableRowGroup: true,
+    enablePivot: true,
+    enableValue: true,
+    width: getColumnWidth(header),
+    cellStyle: shouldApplyWrapText(header) ? {
+      lineHeight: "1.9",
+      whiteSpace: "normal", 
+      wordBreak: "break-word",
+      paddingTop: "10px",
+    } : null,
+    tooltipField: header, 
+    
+    cellRendererParams: {
+      tooltipRenderer: (params) => {
+        return `<div class="tooltiptext" style="white-space: normal; overflow-wrap: break-word;">${params.value}</div>`;
+      },
+    }
+  }));
+};
+
+const columnDefs = [
+  {
+    field: "",
+    headerName: "",
+    checkboxSelection: true,
+    headerCheckboxSelection: true,
+    rowDrag: true,
+    width: 20,
+    minWidth: 60,
+    maxWidth: 70,
+  },
+  ...getColumnDefs(),
+];
+  const getRowHeight = (params) => {
+    const maxRowHeight = 200; 
+    const lineHeight = 20; 
+
+    const wrappedTextLines = Math.ceil(params.data[params.colDef.field].length / 25); 
+    const calculatedHeight = wrappedTextLines * lineHeight;
+
+    return Math.min(calculatedHeight, maxRowHeight);
+  };
   
   return (
     <div id="root" className="ag-theme-alpine" style={{ height: "82vh", width: "99vw" }}>
@@ -226,25 +258,30 @@ LicenseManager.setLicenseKey(
 
       <AgGridReact
        
-        rowData={rowData}
-        columnDefs={columnDefs}
-        defaultColDef={{
-          sortable: true,
-          resizable: true,
-          floatingFilter: true,
-          enablePivot: true,
-          autoHeaderHeight: true,
-          enableFilter: true,
-        }}
-        rowSelection={"multiple"}
-        rowMultiSelectWithClick={true}
-        animateRows={true}
-        enableCharts={true}
-        enableRangeSelection={true}
-        enableRangeHandle={true}
-        suppressMoveWhenRowDragging={false}
-        suppressBrowserResizeObserver={true}
-        pivotMode={false}
+       rowData={rowData}
+       columnDefs={columnDefs}
+       defaultColDef={{
+         sortable: true,
+         resizable: true,
+         floatingFilter: true,
+         enablePivot: true,
+         autoHeaderHeight: true,
+         enableFilter: true,
+         // autoHeight: true, 
+         wrapText: true,
+         getRowHeight: getRowHeight,
+         
+       }}
+       rowSelection={"multiple"}
+       rowMultiSelectWithClick={true}
+       animateRows={true}
+       enableCharts={true}
+       enableRangeSelection={true}
+       enableRangeHandle={true}
+       suppressMoveWhenRowDragging={false}
+       suppressBrowserResizeObserver={true}
+       pivotMode={false}
+       rowHeight={100}
         sideBar={{
           toolPanels: [
             {
