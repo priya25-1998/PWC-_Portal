@@ -165,7 +165,7 @@ import "./AgGrid.css"
     return isNumeric ? "series" : "category";
   };
 
-  const IDColumns = ['Issue ID', 'Action ID', 'Issue Identified On','Issue Closed On','Issue Status','Primary Issue ID','Secondary Issue ID','Label','Score','Control ID','Redundancy','Organization','Theme ID','Schedule Date','Total Test Count','Test Frequency','Due Date','Test Result','Duration','Status','Key Control','Parent Object','Purpose','Recommended Purpose','GRC Object ID','GRC Object Type'];
+  const IDColumns = ['Issue ID', 'Action ID', 'Issue Identified On','Issue Closed On','Issue Status','Primary Issue ID','Label','Score','Control ID','Redundancy','Organization','Theme ID','Schedule Date','Total Test Count','Test Frequency','Due Date','Test Result','Duration','Status','Key Control','Parent Object','Purpose','Recommended Purpose','GRC Object ID','GRC Object Type','Risk ID'];
   const getColumnWidth = (header) => {
     if (IDColumns.includes(header)) {
       return 200;
