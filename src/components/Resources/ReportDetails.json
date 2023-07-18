@@ -1,28 +1,28 @@
 [
     {
       "key": "IssueToActions",
-      "reportName": "Issues To Actions Mapping",
+      "reportName": "Signals To Actions Mapping",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Issues_to_Actions_pwc.csv"
     },
 
     {
       "key": "IssueswithNoActions",
-      "reportName": "Issues with No Actions",
+      "reportName": "Signals with No Actions",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Issues_with_no_actions_pwc.csv"
     },
     {
       "key": "IssuebyType",
-      "reportName": "Issue by Type",
+      "reportName": "Signals by Type",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Issues_by_type_pwc.csv"
     },
     {
       "key": "IssueswithNoGRCConnections",
-      "reportName": "Issues with No GRC Connections",
+      "reportName": "Signals with No GRC Connections",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Issues_with_no_GRC_Connections.csv"
     },
     {
       "key": "IssuesmappedtoGRCObjects",
-      "reportName": "Issues mapped to GRC Objects",
+      "reportName": "Signals mapped to GRC Objects",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Issues_mapped_to_GRCobjects_pwc.csv"
     },
     {
@@ -53,7 +53,7 @@
     },
     {
       "key": "IssueswithTheme",
-      "reportName": " Issues Associated with Theme",
+      "reportName": " Signals Associated with Theme",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Issues_with_theme_pwc.csv"
     },
 
@@ -69,12 +69,12 @@
     },
     {
       "key": "SimilarIssues",
-      "reportName": " Similar Issues",
+      "reportName": " Similar Signals",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Similar_pwc.csv"
     },
     {
       "key": "DuplicateIssues",
-      "reportName": "Duplicate Issues",
+      "reportName": "Duplicate Signals",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Duplicates_pwc.csv"
     }
 
