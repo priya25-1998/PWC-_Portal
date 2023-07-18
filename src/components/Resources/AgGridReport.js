@@ -174,6 +174,13 @@ import "./AgGrid.css"
     }
   };
 
+  const navigateToSubReport = (params) => {
+    if (reportName === "Recommended Controls Details" && params.data) {
+      const url = `${window.location.origin}/grid/?key=controlmetadataaggridtesting&Control ID=${params.data["Control ID"]}`;
+      window.open(url, "_blank");
+    }
+  };
+
   const columnsWithWrapText = ["Issue Description", "Issue Title", "Action Title","Action Description",'Issue Theme'];
 const shouldApplyWrapText = (column) => {
   return columnsWithWrapText.includes(column);
@@ -216,6 +223,10 @@ const columnDefs = [
     width: 20,
     minWidth: 60,
     maxWidth: 70,
+    enablePivot: false,
+    autoHeaderHeight: false,
+    enableFilter: false,
+    cellRenderer: navigateToSubReport,
   },
   ...getColumnDefs(),
 ];
@@ -313,6 +324,9 @@ const columnDefs = [
         onFirstDataRendered={(params) => params.api.sizeColumnsToFit()}
         popupParent={popupParent}
         onRowDragEnd={handleRowDragEnd}
+        onRowClicked={(params) => {
+          navigateToSubReport(params);
+        }}
       />
     </div>
   );
