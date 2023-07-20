@@ -119,7 +119,7 @@ import "./AgGrid.css"
   };
   const navigateToDetails = (header) => {
     console.log("header :::", header);
-    if (header === "Submit" && (reportName === "Risk Recommendations" || reportName === "Control Recommendations")) {
+    if (header === "Submit" || header === "Action" && (reportName === "Risk Recommendations" || reportName === "Control Recommendations" || reportName === "Optimization Strategy")) {
       return (params) => {
         // const columnValue = params.data[params.column.colId];
         // if (columnValue !== undefined) {
@@ -165,10 +165,10 @@ import "./AgGrid.css"
     return isNumeric ? "series" : "category";
   };
 
-  const IDColumns = ['Issue ID', 'Action ID', 'Issue Identified On','Issue Closed On','Issue Status','Primary Issue ID','Label','Score','Control ID','Redundancy','Organization','Theme ID','Schedule Date','Total Test Count','Test Frequency','Due Date','Test Result','Duration','Status','Key Control','Parent Object','Purpose','Recommended Purpose','GRC Object ID','GRC Object Type','Risk ID','X Coordinate','Y Coordinate'];
+  const IDColumns = ['Issue ID', 'Action ID', 'Issue Identified On','Issue Closed On','Issue Status','Primary Issue ID','Label','Score','Control ID','Redundancy','Organization','Theme ID','Schedule Date','Total Test Count','Test Frequency','Due Date','Test Result','Duration','Status','Key Control','Parent Object','Purpose','Recommended Purpose','GRC Object ID','GRC Object Type','Risk ID','X Coordinate','Y Coordinate','Current Test Frequency','Recommendation','Action','Mode','Rationale Filter','Control Test Count','LOB'];
   const getColumnWidth = (header) => {
     if (IDColumns.includes(header)) {
-      return 200;
+      return 250;
     } else {
       return 500;
     }
@@ -198,11 +198,38 @@ const getColumnDefs = () => {
     enableValue: true,
     width: getColumnWidth(header),
     cellStyle: shouldApplyWrapText(header) ? {
-      lineHeight: "1.9",
+      lineHeight: "1.4",
       whiteSpace: "normal", 
       wordBreak: "break-word",
       paddingTop: "10px",
     } : null,
+    cellStyle: (params) => {
+      if (params.value === "Re-test") {
+        return {
+          backgroundColor: "LightCoral",
+          fontWeight: "bold",
+          borderRadius: "2px",
+          textAlign: "center",
+          border: "crimson Solid",
+          color: "white",
+          width: "160px",
+          height: "35px",
+          
+        };
+      }
+      if (params.value === "Optimize") {
+        return {
+          backgroundColor: "MediumAquamarine",
+          fontWeight: "bold",
+          borderRadius: "2px",
+          textAlign: "center",
+          border: "LightSeaGreen Solid",
+          color: "white",
+          width: "160px",
+          height: "35px",
+        };
+      }
+    },
     tooltipField: header, 
     
     cellRendererParams: {

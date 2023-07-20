@@ -76,8 +76,11 @@
       "key": "DuplicateIssues",
       "reportName": "Duplicate Signals",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Duplicates_pwc.csv"
+    },
+    {
+      "key": "OptimizationStrategy",
+      "reportName": "Optimization Strategy",
+      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/OptimizationStrategy.csv"
     }
-
-
     
 ] 
