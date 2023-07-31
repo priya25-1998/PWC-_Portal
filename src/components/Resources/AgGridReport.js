@@ -204,7 +204,7 @@ const getColumnDefs = () => {
       paddingTop: "10px",
     } : null,
     cellStyle: (params) => {
-      if (params.value === "Re-test") {
+      if (params.value === "Re-test" || params.value === "Retest") {
         return {
           backgroundColor: "LightCoral",
           fontWeight: "bold",
