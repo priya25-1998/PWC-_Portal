@@ -1,0 +1,497 @@
+[
+    {
+        "key": "PreventiveDetective",
+        "reportName": "Preventive Detective Controls",
+        "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/Control_Canvas_PWC/Preventive_Detective.csv",
+        "columns": [
+          {
+            "field": "Control Theme",
+            "headerName": "Control Theme",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "checkboxSelection": true,
+            "headerCheckboxSelection": true,
+            "rowDrag": true,
+            "width": 350,
+            "cellStyle": {
+              "lineHeight": "1.9",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "12px"
+            },
+            "tooltipField": "Control Theme",
+            "floatingFilter": true
+          },
+          {
+            "field": "Control ID",
+            "headerName": "Control ID",
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "width": 190,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Control ID",
+            "floatingFilter": true
+          },
+          {
+            "field": "Control Name",
+            "headerName": "Control Name",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "width": 220,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Control Name",
+            "floatingFilter": true
+          },
+          {
+            "field": "Control Description",
+            "headerName": "Control Description",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "width": 350,
+            "cellStyle": {
+                "lineHeight": "1.9",
+                "whiteSpace": "normal",
+                "wordBreak": "break-word",
+                "paddingTop": "12px"
+            },
+            "tooltipField": "Control Description",
+            "floatingFilter": true
+            
+          },
+          {
+            "field": "Purpose",
+            "headerName": "Purpose",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "width": 170,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Purpose",
+            "floatingFilter": true
+          },
+          {
+            "field": "Recommended Purpose",
+            "headerName": "Recommended Purpose",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "width": 250,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Recommended Purpose",
+            "floatingFilter": true
+          }
+        ]
+      },
+      {
+        "key": "ControlAssessment",
+        "reportName": "Control Assessment",
+        "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/Control_Canvas_PWC/Control_Assessment.csv",
+        "columns": [
+          {
+            "field": "Control Theme",
+            "headerName": "Control Theme",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "checkboxSelection": true,
+            "headerCheckboxSelection": true,
+            "rowDrag": true,
+            "width": 350,
+            "cellStyle": {
+              "lineHeight": "1.9",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "12px"
+            },
+            "tooltipField": "Control Theme",
+            "floatingFilter": true
+          },
+          {
+            "field": "Contro ID",
+            "headerName": "Control ID",
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "width": 190,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Control ID",
+            "floatingFilter": true
+          },
+          {
+            "field": "Control Name",
+            "headerName": "Control Name",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "width": 220,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Control Name",
+            "floatingFilter": true
+          },
+          {
+            "field": "Control Description",
+            "headerName": "Control Description",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "width": 350,
+            "cellStyle": {
+                "lineHeight": "1.9",
+                "whiteSpace": "normal",
+                "wordBreak": "break-word",
+                "paddingTop": "12px"
+            },
+            "tooltipField": "Control Description",
+            "floatingFilter": true
+            
+          },
+          {
+            "field": "Control Assessment",
+            "headerName": "Control Assessment",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "width": 170,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Control Assessment",
+            "floatingFilter": true
+          }
+          
+        ]
+      },
+      {
+        "key": "ActionRecommendations",
+        "reportName": "Action Recommendations",
+        "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Action_recommendations_pwc.csv",
+        "columns": [
+          {
+            "field": "Issue ID",
+            "headerName": "Issue ID",
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "checkboxSelection": true,
+            "headerCheckboxSelection": true,
+            "rowDrag": true,
+            "width": 230,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Issue ID",
+            "floatingFilter": true
+          },
+          {
+            "field": "Issue Title",
+            "headerName": "Issue Title",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "width": 220,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Issue Title",
+            "floatingFilter": true
+          },
+          {
+            "field": "Issue Description",
+            "headerName": "Issue Description",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "width": 350,
+            "cellStyle": {
+                "lineHeight": "1.9",
+                "whiteSpace": "normal",
+                "wordBreak": "break-word",
+                "paddingTop": "12px"
+            },
+            "tooltipField": "Issue Description",
+            "floatingFilter": true
+            
+          },
+          {
+            "field": "Action ID",
+            "headerName": "Action ID",
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "width": 190,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Action ID",
+            "floatingFilter": true
+          },
+          {
+            "field": "Action Title",
+            "headerName": "Action Title",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "width": 250,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Action Title",
+            "floatingFilter": true
+          },
+          {
+            "field": "Action Description",
+            "headerName": "Action Description",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "width": 350,
+            "cellStyle": {
+                "lineHeight": "1.9",
+                "whiteSpace": "normal",
+                "wordBreak": "break-word",
+                "paddingTop": "12px"
+            },
+            "tooltipField": "Action Description",
+            "floatingFilter": true
+            
+          },
+          {
+            "field": "Score",
+            "headerName": "Score",
+            "filter": true,
+            "chartDataType": "Series",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "width": 120,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Score",
+            "floatingFilter": true
+          }
+                   
+        ]
+      },
+      {
+        "key": "SimilarIssues",
+        "reportName": " Similar Signals",
+        "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Similar_pwc.csv",
+        "columns": [
+            {
+              "field": "Issue Theme",
+              "headerName": "Issue Theme",
+              "filter": true,
+              "chartDataType": "category",
+              "enableRowGroup": true,
+              "enablePivot": true,
+              "enableValue": true,
+              "checkboxSelection": true,
+              "headerCheckboxSelection": true,
+              "rowDrag": true,
+              "width": 350,
+              "cellStyle": {
+                "lineHeight": "1.9",
+                "whiteSpace": "normal",
+                "wordBreak": "break-word",
+                "paddingTop": "12px"
+              },
+              "tooltipField": "Issue Theme",
+              "floatingFilter": true
+            },
+            {
+              "field": "Primary Issue ID",
+              "headerName": "Primary Issue ID",
+              "chartDataType": "category",
+              "enableRowGroup": true,
+              "enablePivot": true,
+              "enableValue": true,
+              "width": 190,
+              "cellStyle": {
+                "lineHeight": "1.8",
+                "whiteSpace": "normal",
+                "wordBreak": "break-word",
+                "paddingTop": "10px"
+              },
+              "tooltipField": "Primary Issue ID",
+              "floatingFilter": true
+            },
+            {
+              "field": "Issue ID",
+              "headerName": "Issue ID",
+              "filter": true,
+              "chartDataType": "category",
+              "enableRowGroup": true,
+              "enablePivot": true,
+              "enableValue": true,
+              "width": 220,
+              "cellStyle": {
+                "lineHeight": "1.8",
+                "whiteSpace": "normal",
+                "wordBreak": "break-word",
+                "paddingTop": "10px"
+              },
+              "tooltipField": "Issue ID",
+              "floatingFilter": true
+            },
+            {
+                "field": "Issue Title",
+                "headerName": "Issue Title",
+                "filter": true,
+                "chartDataType": "category",
+                "enableRowGroup": true,
+                "enablePivot": true,
+                "enableValue": true,
+                "width": 220,
+                "cellStyle": {
+                  "lineHeight": "1.8",
+                  "whiteSpace": "normal",
+                  "wordBreak": "break-word",
+                  "paddingTop": "10px"
+                },
+                "tooltipField": "Issue Title",
+                "floatingFilter": true
+              },
+            {
+              "field": "Issue Description",
+              "headerName": "Issue Description",
+              "filter": true,
+              "chartDataType": "category",
+              "enableRowGroup": true,
+              "enablePivot": true,
+              "enableValue": true,
+              "width": 350,
+              "cellStyle": {
+                  "lineHeight": "1.9",
+                  "whiteSpace": "normal",
+                  "wordBreak": "break-word",
+                  "paddingTop": "12px"
+              },
+              "tooltipField": "Issue Description",
+              "floatingFilter": true
+              
+            },
+            {
+              "field": "Label",
+              "headerName": "Label",
+              "filter": true,
+              "chartDataType": "category",
+              "enableRowGroup": true,
+              "enablePivot": true,
+              "enableValue": true,
+              "width": 170,
+              "cellStyle": {
+                "lineHeight": "1.8",
+                "whiteSpace": "normal",
+                "wordBreak": "break-word",
+                "paddingTop": "10px"
+              },
+              "tooltipField": "Label",
+              "floatingFilter": true
+            },
+            {
+                "field": "Score",
+                "headerName": "Score",
+                "filter": true,
+                "chartDataType": "Series",
+                "enableRowGroup": true,
+                "enablePivot": true,
+                "enableValue": true,
+                "width": 120,
+                "cellStyle": {
+                  "lineHeight": "1.8",
+                  "whiteSpace": "normal",
+                  "wordBreak": "break-word",
+                  "paddingTop": "10px"
+                },
+                "tooltipField": "Score",
+                "floatingFilter": true
+              }
+        
+        ]
+    }
+    
+
+]
