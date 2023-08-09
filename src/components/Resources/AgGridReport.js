@@ -7,8 +7,6 @@ import csvtojson from 'csvtojson';
 import { BarWave } from "react-cssfx-loading";
 import "./AgGrid.css"
 
-
-
 //   function AgGridReport() {
 //     const [rowData, setRowData] = useState([]);
 //     const [headers, setHeaders] = useState([]);
@@ -449,7 +447,21 @@ function AgGridReport() {
           .then((jsonData) => {
             setRowData(jsonData);
             setOriginalData(jsonData);
-            setColumnDefs(columns);
+            const columnDefsWithRenderer = columns.map(column => {
+              if ((column.field === 'Action' || column.field === 'Submit') && (reportName === "Risk Recommendations" || reportName === "Control Recommendations" || reportName === "Optimization Strategy")) {
+                return {
+                  ...column,
+                  tooltipField: column.field,
+                  cellRenderer: customCellRenderer
+                };
+              }
+              return {
+                ...column,
+                tooltipField: column.field,
+                cellStyle: cellStyleDef
+              };
+            });
+            setColumnDefs(columnDefsWithRenderer);
             applyColumnFilters(jsonData, columnFilters);
             setIsLoading(false);
           })
@@ -462,6 +474,63 @@ function AgGridReport() {
       }
     }
   }, [reportKey]);
+
+  const cellStyleDef = (params) => {
+    let style = {
+      lineHeight: "1.9",
+      whiteSpace: "normal",
+      wordBreak: "break-word",
+      paddingTop: "10px",
+
+    };
+
+    if (params.value === "Re-test" || params.value === "Retest") {
+      style.backgroundColor = "LightCoral";
+      style.fontWeight = "bold";
+      style.borderRadius = "2px";
+      style.textAlign = "center";
+      style.border = "crimson solid";
+      style.color = "white";
+      style.width = "130px";
+      style.height = "35px";
+      style.paddingTop = "5px";
+    } else if (params.value === "Optimize") {
+      style.backgroundColor = "MediumAquamarine";
+      style.fontWeight = "bold";
+      style.borderRadius = "2px";
+      style.textAlign = "center";
+      style.border = "LightSeaGreen solid";
+      style.color = "white";
+      style.width = "130px";
+      style.height = "35px";
+      style.paddingTop = "5px";
+    }
+
+    return style;
+  }
+  const customCellRenderer = (params) => {
+    if (params.value) {
+
+      return (
+        <button className="btn"
+          onClick={() =>
+            navigateToDetails(
+              params.data.id,
+              "https://mdosri.rnd.metricstream.com/ui/report/101077/report5568"
+            )
+          }
+
+        >
+          Take Action
+        </button>
+      );
+    } else {
+      return params.value;
+    }
+  };
+  function navigateToDetails(id, url) {
+    window.location.href = url;
+  }
 
   const fetchCsvData = (csvUrl) => {
     return fetch(csvUrl)
@@ -518,11 +587,7 @@ function AgGridReport() {
     return document.body;
   }, []);
 
-  function goBack() {
-    window.history.back();
-  }
-
-
+  
   const getRowHeight = (params) => {
     const maxRowHeight = 200;
     const lineHeight = 20;
@@ -533,19 +598,19 @@ function AgGridReport() {
     return Math.min(calculatedHeight, maxRowHeight);
   };
 
-  const defaultColDef = useMemo(() => {
+ const defaultColDef = useMemo(() => {
     return {
       sortable: true,
-      // resizable: true,
+      resizable: true,
       floatingFilter: true,
       enablePivot: true,
       autoHeaderHeight: true,
       enableFilter: true,
-      // suppressSizeToFit: true,
+      // suppressSizeToFit: false,
       // minWidth: 300,
       // autoHeight: true, 
       wrapText: true,
-      getRowHeight: getRowHeight,
+      getRowHeight: getRowHeight
 
     };
   }, []);
@@ -584,6 +649,17 @@ function AgGridReport() {
       ],
     };
   }, []);
+
+  const calculateInitialWidth = (columns, screenWidth) => {
+    let totalWidth = 0;
+    let i = 0;
+    while (i < columns.length && totalWidth + columns[i].width <= screenWidth) {
+      totalWidth += columns[i].width;
+      i++;
+    }
+    console.log("totalWidth", totalWidth);
+    return totalWidth;
+  };
 
 
 
@@ -649,6 +725,7 @@ function AgGridReport() {
               sideBar={sideBar}
               statusBar={statusBar}
               onFirstDataRendered={(params) => params.api.sizeColumnsToFit()}
+              style={{ width: `${calculateInitialWidth(columnDetails, window.innerWidth)}px`, overflowX: 'auto' }}
               popupParent={popupParent}
               onRowDragEnd={handleRowDragEnd}
 
