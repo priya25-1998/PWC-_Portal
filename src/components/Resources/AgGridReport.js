@@ -650,6 +650,12 @@ function AgGridReport() {
     };
   }, []);
 
+  const autoGroupColumnDef = useMemo(() => {
+    return {
+      minWidth: 500,
+    };
+  }, []);
+
   const calculateInitialWidth = (columns, screenWidth) => {
     let totalWidth = 0;
     let i = 0;
@@ -722,6 +728,7 @@ function AgGridReport() {
               suppressBrowserResizeObserver={true}
               pivotMode={false}
               rowHeight={100}
+              autoGroupColumnDef={autoGroupColumnDef}
               sideBar={sideBar}
               statusBar={statusBar}
               onFirstDataRendered={(params) => params.api.sizeColumnsToFit()}
