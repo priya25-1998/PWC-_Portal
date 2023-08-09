@@ -18,8 +18,8 @@ services:
     restart: unless-stopped
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./ssl/nginx-selfsigned.key:/etc/nginx/nginx-selfsigned.key:ro
-      - ./ssl/nginx-selfsigned.crt:/etc/nginx/nginx-selfsigned.crt:ro
+      - ./ssl/star_metricstream_com.crt:/etc/nginx/star_metricstream_com.crt:ro
+      - ./ssl/star_metricstream_com.key:/etc/nginx/star_metricstream_com.key:ro
       - ./ssl/dhparam.pem:/etc/nginx/dhparam.pem:ro
     depends_on:
       - aggrid
