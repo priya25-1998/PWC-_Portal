@@ -80,7 +80,7 @@
     {
       "key": "OptimizationStrategy",
       "reportName": "Optimization Strategy",
-      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/OptimizationStrategy.csv"
+      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/OptimizationStrategyCIBC.csv"
     },
     {
       "key": "OptimizationStrategyMG",
