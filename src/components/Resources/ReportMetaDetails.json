@@ -1002,6 +1002,188 @@
         ]
       },
       {
+        "key": "RiskRecommendations",
+        "reportName": "Risk Recommendations",
+        "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/RiskData_PWC.csv",
+        "columns": [
+            {
+                "field": "Issue Theme",
+                "headerName": "Issue Theme",
+                "filter": true,
+                "chartDataType": "category",
+                "checkboxSelection": true,
+                "headerCheckboxSelection": true,
+                "rowDrag": true,
+                "enableRowGroup": true,
+                "enablePivot": true,
+                "enableValue": true,
+                "minWidth":300,
+                "width": 300,
+                "cellStyle": {
+                    "lineHeight": "1.9",
+                    "whiteSpace": "normal",
+                    "wordBreak": "break-word",
+                    "paddingTop": "12px"
+                },
+                "tooltipField": "Issue Theme",
+                "floatingFilter": true
+            },
+          {
+            "field": "Issue ID",
+            "headerName": "Issue ID",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "minWidth":210,
+            "width": 210,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Issue ID",
+            "floatingFilter": true
+          },
+          
+          {
+            "field": "Issue Title",
+            "headerName": "Issue Title",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "minWidth": 240,
+            "width": 240,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Issue Title",
+            "floatingFilter": true
+          },
+          {
+            "field": "Issue Description",
+            "headerName": "Issue Description",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "minWidth": 290,
+            "width": 290,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Issue Description",
+            "floatingFilter": true
+          },
+          {
+            "field": "Risk ID",
+            "headerName": "Risk ID",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "minWidth": 170,
+            "width": 170,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Control ID",
+            "floatingFilter": true
+          },
+          {
+            "field": "Risk Title",
+            "headerName": "Risk Title",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "minWidth": 240,
+            "width": 240,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Control Name",
+            "floatingFilter": true
+          },
+          {
+            "field": "Risk Description",
+            "headerName": "Risk Description",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "minWidth": 290,
+            "width": 290,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Control Description",
+            "floatingFilter": true
+          },
+          {
+            "field": "Score",
+            "headerName": "Score",
+            "filter": true,
+            "chartDataType": "series",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "minWidth": 120,
+            "width": 120,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Score",
+            "floatingFilter": true
+          },
+          {
+            "field": "Submit",
+            "headerName": "Submit",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "minWidth": 180,
+            "width": 180,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Submit",
+            "floatingFilter": true
+          }
+        ]
+      },
+      {
         "key": "OptimizationStrategy",
         "reportName": "Optimization Strategy",
         "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/OptimizationStrategyCIBC.csv",
@@ -1221,3 +1403,7 @@
         ]
       }
     ]
+
+
+
+    

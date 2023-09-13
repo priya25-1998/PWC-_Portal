@@ -86,5 +86,10 @@
       "key": "OptimizationStrategyMG",
       "reportName": "Optimization Strategy",
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/modified_optimization_file_m%26g.csv"
+    },
+    {
+      "key": "RiskRecommendations",
+      "reportName": "Risk Recommendations",
+      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/RiskData_PWC.csv"
     }
 ] 
