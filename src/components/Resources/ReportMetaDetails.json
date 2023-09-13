@@ -1085,6 +1085,24 @@
             },
             "tooltipField": "Issue Description",
             "floatingFilter": true
+          },{
+            "field": "Source Type",
+            "headerName": "Source Type",
+            "filter": true,
+            "chartDataType": "category",
+            "enableRowGroup": true,
+            "enablePivot": true,
+            "enableValue": true,
+            "minWidth": 290,
+            "width": 290,
+            "cellStyle": {
+              "lineHeight": "1.8",
+              "whiteSpace": "normal",
+              "wordBreak": "break-word",
+              "paddingTop": "10px"
+            },
+            "tooltipField": "Source Type",       
+            "floatingFilter": true
           },
           {
             "field": "Risk ID",
@@ -1102,7 +1120,7 @@
               "wordBreak": "break-word",
               "paddingTop": "10px"
             },
-            "tooltipField": "Control ID",
+            "tooltipField": "Risk ID",
             "floatingFilter": true
           },
           {
@@ -1121,7 +1139,7 @@
               "wordBreak": "break-word",
               "paddingTop": "10px"
             },
-            "tooltipField": "Control Name",
+            "tooltipField": "Risk Title",
             "floatingFilter": true
           },
           {
@@ -1140,7 +1158,7 @@
               "wordBreak": "break-word",
               "paddingTop": "10px"
             },
-            "tooltipField": "Control Description",
+            "tooltipField": "Risk Description",
             "floatingFilter": true
           },
           {
