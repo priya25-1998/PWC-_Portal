@@ -220,7 +220,7 @@
         "columns": [
           {
             "field": "Issue ID",
-            "headerName": "Issue ID",
+            "headerName": "Signal ID",
             "chartDataType": "category",
             "enableRowGroup": true,
             "enablePivot": true,
@@ -242,7 +242,7 @@
           },
           {
             "field": "Issue Title",
-            "headerName": "Issue Title",
+            "headerName": "Signal Title",
             "filter": true,
             "chartDataType": "category",
             "enableRowGroup": true,
@@ -261,7 +261,7 @@
           },
           {
             "field": "Issue Description",
-            "headerName": "Issue Description",
+            "headerName": "Signal Description",
             "filter": true,
             "chartDataType": "category",
             "enableRowGroup": true,
@@ -366,7 +366,7 @@
         "columns": [
             {
               "field": "Issue Theme",
-              "headerName": "Issue Theme",
+              "headerName": "Signal Theme",
               "filter": true,
               "chartDataType": "category",
               "enableRowGroup": true,
@@ -387,7 +387,7 @@
             },
             {
               "field": "Primary Issue ID",
-              "headerName": "Primary Issue ID",
+              "headerName": "Primary Signal ID",
               "chartDataType": "category",
               "enableRowGroup": true,
               "enablePivot": true,
@@ -405,7 +405,7 @@
             },
             {
               "field": "Issue ID",
-              "headerName": "Issue ID",
+              "headerName": "Signal ID",
               "filter": true,
               "chartDataType": "category",
               "enableRowGroup": true,
@@ -423,7 +423,7 @@
             },
             {
                 "field": "Issue Title",
-                "headerName": "Issue Title",
+                "headerName": "Signal Title",
                 "filter": true,
                 "chartDataType": "category",
                 "enableRowGroup": true,
@@ -441,7 +441,7 @@
               },
             {
               "field": "Issue Description",
-              "headerName": "Issue Description",
+              "headerName": "Signal Description",
               "filter": true,
               "chartDataType": "category",
               "enableRowGroup": true,
@@ -504,7 +504,7 @@
         "columns": [
             {
               "field": "Issue Theme",
-              "headerName": "Issue Theme",
+              "headerName": "Signal Theme",
               "filter": true,
               "chartDataType": "category",
               "enableRowGroup": true,
@@ -526,12 +526,12 @@
             },
             {
               "field": "Primary Issue ID",
-              "headerName": "Primary Issue ID",
+              "headerName": "Primary Signal ID",
               "chartDataType": "category",
               "enableRowGroup": true,
               "enablePivot": true,
               "enableValue": true,
-              "width": 190,
+              "width": 210,
               "cellStyle": {
                 "lineHeight": "1.8",
                 "whiteSpace": "normal",
@@ -544,7 +544,7 @@
             },
             {
               "field": "Issue ID",
-              "headerName": "Issue ID",
+              "headerName": "Signal ID",
               "filter": true,
               "chartDataType": "category",
               "enableRowGroup": true,
@@ -562,7 +562,7 @@
             },
             {
                 "field": "Issue Title",
-                "headerName": "Issue Title",
+                "headerName": "Signal Title",
                 "filter": true,
                 "chartDataType": "category",
                 "enableRowGroup": true,
@@ -581,7 +581,7 @@
               },
             {
               "field": "Issue Description",
-              "headerName": "Issue Description",
+              "headerName": "Signal Description",
               "filter": true,
               "chartDataType": "category",
               "enableRowGroup": true,
@@ -644,7 +644,7 @@
         "columns": [
             {
                 "field": "Issue Theme",
-                "headerName": "Issue Theme",
+                "headerName": "Signal Theme",
                 "filter": true,
                 "chartDataType": "category",
                 "checkboxSelection": true,
@@ -666,7 +666,7 @@
             },
           {
             "field": "Issue ID",
-            "headerName": "Issue ID",
+            "headerName": "Signal ID",
             "filter": true,
             "chartDataType": "category",
             "enableRowGroup": true,
@@ -686,7 +686,7 @@
           
           {
             "field": "Issue Title",
-            "headerName": "Issue Title",
+            "headerName": "Signal Title",
             "filter": true,
             "chartDataType": "category",
             "enableRowGroup": true,
@@ -705,7 +705,7 @@
           },
           {
             "field": "Issue Description",
-            "headerName": "Issue Description",
+            "headerName": "Signal Description",
             "filter": true,
             "chartDataType": "category",
             "enableRowGroup": true,
@@ -724,7 +724,7 @@
           },
           {
             "field": "Issue Identified On",
-            "headerName": "Issue Identified On",
+            "headerName": "Signal Identified On",
             "filter": true,
             "chartDataType": "category",
             "enableRowGroup": true,
@@ -743,7 +743,7 @@
           },
           {
             "field": "Issue Closed On",
-            "headerName": "Issue Closed On",
+            "headerName": "Signal Closed On",
             "filter": true,
             "chartDataType": "category",
             "enableRowGroup": true,
@@ -762,7 +762,7 @@
           },
           {
             "field": "Issue Status",
-            "headerName": "Issue Status",
+            "headerName": "Signal Status",
             "filter": true,
             "chartDataType": "category",
             "enableRowGroup": true,
@@ -826,7 +826,7 @@
         "columns": [
             {
                 "field": "Issue Theme",
-                "headerName": "Issue Theme",
+                "headerName": "Signal Theme",
                 "filter": true,
                 "chartDataType": "category",
                 "checkboxSelection": true,
@@ -848,7 +848,7 @@
             },
           {
             "field": "Issue ID",
-            "headerName": "Issue ID",
+            "headerName": "Signal ID",
             "filter": true,
             "chartDataType": "category",
             "enableRowGroup": true,
@@ -868,7 +868,7 @@
           
           {
             "field": "Issue Title",
-            "headerName": "Issue Title",
+            "headerName": "Signal Title",
             "filter": true,
             "chartDataType": "category",
             "enableRowGroup": true,
@@ -887,7 +887,7 @@
           },
           {
             "field": "Issue Description",
-            "headerName": "Issue Description",
+            "headerName": "Signal Description",
             "filter": true,
             "chartDataType": "category",
             "enableRowGroup": true,
@@ -1008,7 +1008,7 @@
         "columns": [
             {
                 "field": "Issue Theme",
-                "headerName": "Issue Theme",
+                "headerName": "Signal Theme",
                 "filter": true,
                 "chartDataType": "category",
                 "checkboxSelection": true,
@@ -1030,7 +1030,7 @@
             },
           {
             "field": "Issue ID",
-            "headerName": "Issue ID",
+            "headerName": "Signal ID",
             "filter": true,
             "chartDataType": "category",
             "enableRowGroup": true,
@@ -1050,7 +1050,7 @@
           
           {
             "field": "Issue Title",
-            "headerName": "Issue Title",
+            "headerName": "Signal Title",
             "filter": true,
             "chartDataType": "category",
             "enableRowGroup": true,
@@ -1069,7 +1069,7 @@
           },
           {
             "field": "Issue Description",
-            "headerName": "Issue Description",
+            "headerName": "Signal Description",
             "filter": true,
             "chartDataType": "category",
             "enableRowGroup": true,
