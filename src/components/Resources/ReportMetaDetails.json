@@ -365,7 +365,7 @@
         "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Similar_pwc.csv",
         "columns": [
             {
-              "field": "Issue Theme",
+              "field": "Signal Theme",
               "headerName": "Signal Theme",
               "filter": true,
               "chartDataType": "category",
@@ -382,11 +382,11 @@
                 "wordBreak": "break-word",
                 "paddingTop": "12px"
               },
-              "tooltipField": "Issue Theme",
+              "tooltipField": "Signal Theme",
               "floatingFilter": true
             },
             {
-              "field": "Primary Issue ID",
+              "field": "Primary Signal ID",
               "headerName": "Primary Signal ID",
               "chartDataType": "category",
               "enableRowGroup": true,
@@ -399,12 +399,12 @@
                 "wordBreak": "break-word",
                 "paddingTop": "10px"
               },
-              "tooltipField": "Primary Issue ID",
+              "tooltipField": "Primary Signal ID",
               "floatingFilter": true,
               "filter": true
             },
             {
-              "field": "Issue ID",
+              "field": "Signal ID",
               "headerName": "Signal ID",
               "filter": true,
               "chartDataType": "category",
@@ -418,11 +418,11 @@
                 "wordBreak": "break-word",
                 "paddingTop": "10px"
               },
-              "tooltipField": "Issue ID",
+              "tooltipField": "Signal ID",
               "floatingFilter": true
             },
             {
-                "field": "Issue Title",
+                "field": "Signal Title",
                 "headerName": "Signal Title",
                 "filter": true,
                 "chartDataType": "category",
@@ -436,11 +436,11 @@
                   "wordBreak": "break-word",
                   "paddingTop": "10px"
                 },
-                "tooltipField": "Issue Title",
+                "tooltipField": "Signal Title",
                 "floatingFilter": true
               },
             {
-              "field": "Issue Description",
+              "field": "Signal Description",
               "headerName": "Signal Description",
               "filter": true,
               "chartDataType": "category",
@@ -454,13 +454,13 @@
                   "wordBreak": "break-word",
                   "paddingTop": "12px"
               },
-              "tooltipField": "Issue Description",
+              "tooltipField": "Signal Description",
               "floatingFilter": true
               
             },
             {
-              "field": "Label",
-              "headerName": "Label",
+              "field": "Redundancy",
+              "headerName": "Redundancy",
               "filter": true,
               "chartDataType": "category",
               "enableRowGroup": true,
@@ -473,7 +473,7 @@
                 "wordBreak": "break-word",
                 "paddingTop": "10px"
               },
-              "tooltipField": "Label",
+              "tooltipField": "Redundancy",
               "floatingFilter": true
             },
             {
@@ -503,7 +503,7 @@
         "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Duplicates_pwc.csv",
         "columns": [
             {
-              "field": "Issue Theme",
+              "field": "Signal Theme",
               "headerName": "Signal Theme",
               "filter": true,
               "chartDataType": "category",
@@ -521,11 +521,11 @@
                 "wordBreak": "break-word",
                 "paddingTop": "12px"
               },
-              "tooltipField": "Issue Theme",
+              "tooltipField": "Signal Theme",
               "floatingFilter": true
             },
             {
-              "field": "Primary Issue ID",
+              "field": "Primary Signal ID",
               "headerName": "Primary Signal ID",
               "chartDataType": "category",
               "enableRowGroup": true,
@@ -538,12 +538,12 @@
                 "wordBreak": "break-word",
                 "paddingTop": "10px"
               },
-              "tooltipField": "Primary Issue ID",
+              "tooltipField": "Primary Signal ID",
               "floatingFilter": true,
               "filter": true
             },
             {
-              "field": "Issue ID",
+              "field": "Signal ID",
               "headerName": "Signal ID",
               "filter": true,
               "chartDataType": "category",
@@ -557,11 +557,11 @@
                 "wordBreak": "break-word",
                 "paddingTop": "10px"
               },
-              "tooltipField": "Issue ID",
+              "tooltipField": "Signal ID",
               "floatingFilter": true
             },
             {
-                "field": "Issue Title",
+                "field": "Signal Title",
                 "headerName": "Signal Title",
                 "filter": true,
                 "chartDataType": "category",
@@ -576,11 +576,11 @@
                   "wordBreak": "break-word",
                   "paddingTop": "10px"
                 },
-                "tooltipField": "Issue Title",
+                "tooltipField": "Signal Title",
                 "floatingFilter": true
               },
             {
-              "field": "Issue Description",
+              "field": "Signal Description",
               "headerName": "Signal Description",
               "filter": true,
               "chartDataType": "category",
@@ -594,13 +594,13 @@
                   "wordBreak": "break-word",
                   "paddingTop": "12px"
               },
-              "tooltipField": "Issue Description",
+              "tooltipField": "Signal Description",
               "floatingFilter": true
               
             },
             {
-              "field": "Label",
-              "headerName": "Label",
+              "field": "Redundancy",
+              "headerName": "Redundancy",
               "filter": true,
               "chartDataType": "category",
               "enableRowGroup": true,
@@ -613,7 +613,7 @@
                 "wordBreak": "break-word",
                 "paddingTop": "10px"
               },
-              "tooltipField": "Label",
+              "tooltipField": "Redundancy",
               "floatingFilter": true
             },
             {
@@ -643,7 +643,7 @@
         "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Issues_with_theme_pwc.csv",
         "columns": [
             {
-                "field": "Issue Theme",
+                "field": "Signal Theme",
                 "headerName": "Signal Theme",
                 "filter": true,
                 "chartDataType": "category",
@@ -661,11 +661,11 @@
                     "wordBreak": "break-word",
                     "paddingTop": "12px"
                 },
-                "tooltipField": "Issue Theme",
+                "tooltipField": "Signal Theme",
                 "floatingFilter": true
             },
           {
-            "field": "Issue ID",
+            "field": "Signal ID",
             "headerName": "Signal ID",
             "filter": true,
             "chartDataType": "category",
@@ -680,12 +680,12 @@
               "wordBreak": "break-word",
               "paddingTop": "10px"
             },
-            "tooltipField": "Issue ID",
+            "tooltipField": "Signal ID",
             "floatingFilter": true
           },
           
           {
-            "field": "Issue Title",
+            "field": "Signal Title",
             "headerName": "Signal Title",
             "filter": true,
             "chartDataType": "category",
@@ -700,11 +700,11 @@
                 "wordBreak": "break-word",
                 "paddingTop": "12px"
             },
-            "tooltipField": "Issue Title",
+            "tooltipField": "Signal Title",
             "floatingFilter": true
           },
           {
-            "field": "Issue Description",
+            "field": "Signal Description",
             "headerName": "Signal Description",
             "filter": true,
             "chartDataType": "category",
@@ -719,11 +719,11 @@
                 "wordBreak": "break-word",
                 "paddingTop": "12px"
             },
-            "tooltipField": "Issue Description",
+            "tooltipField": "Signal Description",
             "floatingFilter": true
           },
           {
-            "field": "Issue Identified On",
+            "field": "Signal Identified On",
             "headerName": "Signal Identified On",
             "filter": true,
             "chartDataType": "category",
@@ -738,11 +738,11 @@
               "wordBreak": "break-word",
               "paddingTop": "10px"
             },
-            "tooltipField": "Issue Identified On",
+            "tooltipField": "Signal Identified On",
             "floatingFilter": true
           },
           {
-            "field": "Issue Closed On",
+            "field": "Signal Closed On",
             "headerName": "Signal Closed On",
             "filter": true,
             "chartDataType": "category",
@@ -757,11 +757,11 @@
               "wordBreak": "break-word",
               "paddingTop": "10px"
             },
-            "tooltipField": "Issue Closed On",
+            "tooltipField": "Signal Closed On",
             "floatingFilter": true
           },
           {
-            "field": "Issue Status",
+            "field": "Signal Status",
             "headerName": "Signal Status",
             "filter": true,
             "chartDataType": "category",
@@ -776,7 +776,7 @@
               "wordBreak": "break-word",
               "paddingTop": "10px"
             },
-            "tooltipField": "Issue Status",
+            "tooltipField": "Signal Status",
             "floatingFilter": true
           },
           {
@@ -825,7 +825,7 @@
         "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/control_recommendation_pwc.csv",
         "columns": [
             {
-                "field": "Issue Theme",
+                "field": "Signal Theme",
                 "headerName": "Signal Theme",
                 "filter": true,
                 "chartDataType": "category",
@@ -843,11 +843,11 @@
                     "wordBreak": "break-word",
                     "paddingTop": "12px"
                 },
-                "tooltipField": "Issue Theme",
+                "tooltipField": "Signal Theme",
                 "floatingFilter": true
             },
           {
-            "field": "Issue ID",
+            "field": "Signal ID",
             "headerName": "Signal ID",
             "filter": true,
             "chartDataType": "category",
@@ -862,12 +862,12 @@
               "wordBreak": "break-word",
               "paddingTop": "10px"
             },
-            "tooltipField": "Issue ID",
+            "tooltipField": "Signal ID",
             "floatingFilter": true
           },
           
           {
-            "field": "Issue Title",
+            "field": "Signal Title",
             "headerName": "Signal Title",
             "filter": true,
             "chartDataType": "category",
@@ -882,11 +882,11 @@
               "wordBreak": "break-word",
               "paddingTop": "10px"
             },
-            "tooltipField": "Issue Title",
+            "tooltipField": "Signal Title",
             "floatingFilter": true
           },
           {
-            "field": "Issue Description",
+            "field": "Signal Description",
             "headerName": "Signal Description",
             "filter": true,
             "chartDataType": "category",
@@ -901,7 +901,7 @@
               "wordBreak": "break-word",
               "paddingTop": "10px"
             },
-            "tooltipField": "Issue Description",
+            "tooltipField": "Signal Description",
             "floatingFilter": true
           },
           {
@@ -1007,7 +1007,7 @@
         "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/RiskData_PWC.csv",
         "columns": [
             {
-                "field": "Issue Theme",
+                "field": "Signal Theme",
                 "headerName": "Signal Theme",
                 "filter": true,
                 "chartDataType": "category",
@@ -1025,11 +1025,11 @@
                     "wordBreak": "break-word",
                     "paddingTop": "12px"
                 },
-                "tooltipField": "Issue Theme",
+                "tooltipField": "Signal Theme",
                 "floatingFilter": true
             },
           {
-            "field": "Issue ID",
+            "field": "Signal ID",
             "headerName": "Signal ID",
             "filter": true,
             "chartDataType": "category",
@@ -1044,12 +1044,12 @@
               "wordBreak": "break-word",
               "paddingTop": "10px"
             },
-            "tooltipField": "Issue ID",
+            "tooltipField": "Signal ID",
             "floatingFilter": true
           },
           
           {
-            "field": "Issue Title",
+            "field": "Signal Title",
             "headerName": "Signal Title",
             "filter": true,
             "chartDataType": "category",
@@ -1064,11 +1064,11 @@
               "wordBreak": "break-word",
               "paddingTop": "10px"
             },
-            "tooltipField": "Issue Title",
+            "tooltipField": "Signal Title",
             "floatingFilter": true
           },
           {
-            "field": "Issue Description",
+            "field": "Signal Description",
             "headerName": "Signal Description",
             "filter": true,
             "chartDataType": "category",
@@ -1083,7 +1083,7 @@
               "wordBreak": "break-word",
               "paddingTop": "10px"
             },
-            "tooltipField": "Issue Description",
+            "tooltipField": "Signal Description",
             "floatingFilter": true
           },{
             "field": "Source Type",
