@@ -461,6 +461,16 @@ function AgGridReport() {
                 cellStyle: cellStyleDef
               };
             });
+
+            if ((reportKey === "DuplicateIssues") || (reportKey === "SimilarIssues")) {
+              const rowGroupFields = ["Signal Theme", "Primary Signal ID"];
+              columnDefsWithRenderer.forEach((column) => {
+                if (rowGroupFields.includes(column.field)) {
+                  column.rowGroup = true;
+                }
+              });
+            }
+            
             setColumnDefs(columnDefsWithRenderer);
             applyColumnFilters(jsonData, columnFilters);
             setIsLoading(false);
