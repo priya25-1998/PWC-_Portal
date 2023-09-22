@@ -219,8 +219,8 @@
       "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/IssueCanvas_PWC/Action_recommendations_pwc.csv",
       "columns": [
         {
-          "field": "Issue ID",
-          "headerName": "Signal ID",
+          "field": "Signal Theme",
+          "headerName": "Signal Theme",
           "chartDataType": "category",
           "enableRowGroup": true,
           "enablePivot": true,
@@ -228,6 +228,25 @@
           "checkboxSelection": true,
           "headerCheckboxSelection": true,
           "rowDrag": true,
+          "minWidth":210,
+          "width": 210,
+          "cellStyle": {
+            "lineHeight": "1.8",
+            "whiteSpace": "normal",
+            "wordBreak": "break-word",
+            "paddingTop": "10px"
+          },
+          "tooltipField": "Signal Theme",
+          "floatingFilter": true,
+          "filter": true
+        },
+        {
+          "field": "Issue ID",
+          "headerName": "Signal ID",
+          "chartDataType": "category",
+          "enableRowGroup": true,
+          "enablePivot": true,
+          "enableValue": true,
           "minWidth":210,
           "width": 210,
           "cellStyle": {
