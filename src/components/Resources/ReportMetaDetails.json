@@ -1262,6 +1262,7 @@
         }
       ]
     },
+    
     {
       "key": "OptimizationStrategy",
       "reportName": "Optimization Strategy",
@@ -1477,6 +1478,226 @@
             "paddingTop": "10px"
           },
           "tooltipField": "Control Test Count",
+          "floatingFilter": true
+        }
+        
+      ]
+    },
+    {
+      "key": "OptimizationStrategyMG",
+      "reportName": "Optimization Strategy",
+      "url": "https://ms-optimizer.s3.us-east-2.amazonaws.com/Sample/modified_optimization_file_m%26g.csv",
+      "columns": [
+        {
+          "field": "LOB",
+          "headerName": "LOB",
+          "filter": true,
+          "chartDataType": "category",
+          "enableRowGroup": true,
+          "enablePivot": true,
+          "enableValue": true,
+          "checkboxSelection": true,
+          "headerCheckboxSelection": true,
+          "rowDrag": true,
+          "minWidth":260,
+          "width": 260,
+          "cellStyle": {
+            "lineHeight": "1.8",
+            "whiteSpace": "normal",
+            "wordBreak": "break-word",
+            "paddingTop": "10px"
+          },
+          "tooltipField": "LOB",
+          "floatingFilter": true
+        },
+        {
+          "field": "Control ID",
+          "headerName": "Control ID",
+          "filter": true,
+          "chartDataType": "category",
+          "enableRowGroup": true,
+          "enablePivot": true,
+          "enableValue": true,
+          "minWidth":230,
+          "width": 230,
+          "cellStyle": {
+            "lineHeight": "1.8",
+            "whiteSpace": "normal",
+            "wordBreak": "break-word",
+            "paddingTop": "10px"
+          },
+          "tooltipField": "Control ID",
+          "floatingFilter": true
+        },
+        {
+          "field": "Control Name",
+          "headerName": "Control Name",
+          "filter": true,
+          "chartDataType": "category",
+          "enableRowGroup": true,
+          "enablePivot": true,
+          "enableValue": true,
+          "minWidth":260,
+          "width": 260,
+          "cellStyle": {
+            "lineHeight": "1.8",
+            "whiteSpace": "normal",
+            "wordBreak": "break-word",
+            "paddingTop": "10px"
+          },
+          "tooltipField": "Control Name",
+          "floatingFilter": true
+        },
+        {
+          "field": "Control Description",
+          "headerName": "Control Description",
+          "filter": true,
+          "chartDataType": "category",
+          "enableRowGroup": true,
+          "enablePivot": true,
+          "enableValue": true,
+          "minWidth":260,
+          "width": 260,
+          "cellStyle": {
+            "lineHeight": "1.8",
+            "whiteSpace": "normal",
+            "wordBreak": "break-word",
+            "paddingTop": "10px"
+          },
+          "tooltipField": "Control Description",
+          "floatingFilter": true
+        },
+        {
+          "field": "Current Test Frequency",
+          "headerName": "Current Test Frequency",
+          "filter": true,
+          "chartDataType": "category",
+          "enableRowGroup": true,
+          "enablePivot": true,
+          "enableValue": true,
+          "minWidth":240,
+          "width": 240,
+          "cellStyle": {
+            "lineHeight": "1.8",
+            "whiteSpace": "normal",
+            "wordBreak": "break-word",
+            "paddingTop": "10px"
+          },
+          "tooltipField": "Current Test Frequency",
+          "floatingFilter": true
+        },
+        {
+          "field": "Recommendation",
+          "headerName": "Recommendation",
+          "filter": true,
+          "chartDataType": "category",
+          "enableRowGroup": true,
+          "enablePivot": true,
+          "enableValue": true,
+          "minWidth":260,
+          "width": 260,
+          "cellStyle": {
+            "lineHeight": "1.8",
+            "whiteSpace": "normal",
+            "wordBreak": "break-word",
+            "paddingTop": "10px"
+          },
+          "tooltipField": "Recommendation",
+          "floatingFilter": true
+        },
+        {
+          "field": "Mode",
+          "headerName": "Mode",
+          "filter": true,
+          "chartDataType": "category",
+          "enableRowGroup": true,
+          "enablePivot": true,
+          "enableValue": true,
+          "minWidth":240,
+          "width": 240,
+          "cellStyle": {
+            "lineHeight": "1.8",
+            "whiteSpace": "normal",
+            "wordBreak": "break-word",
+            "paddingTop": "10px"
+          },
+          "tooltipField": "Mode",
+          "floatingFilter": true
+        },
+        {
+          "field": "Rationale",
+          "headerName": "Rationale",
+          "filter": true,
+          "chartDataType": "category",
+          "enableRowGroup": true,
+          "enablePivot": true,
+          "enableValue": true,
+          "minWidth":280,
+          "width": 280,
+          "cellStyle": {
+            "lineHeight": "1.8",
+            "whiteSpace": "normal",
+            "wordBreak": "break-word",
+            "paddingTop": "10px"
+          },
+          "tooltipField": "Rationale",
+          "floatingFilter": true
+        },
+        {
+          "field": "Rationale Filter",
+          "headerName": "Rationale Filter",
+          "filter": true,
+          "chartDataType": "category",
+          "enableRowGroup": true,
+          "enablePivot": true,
+          "enableValue": true,
+          "minWidth":260,
+          "width": 260,
+          "cellStyle": {
+            "lineHeight": "1.8",
+            "whiteSpace": "normal",
+            "wordBreak": "break-word",
+            "paddingTop": "10px"
+          },
+          "tooltipField": "Rationale Filter",
+          "floatingFilter": true
+        },
+        {
+          "field": "Control Test Count",
+          "headerName": "Control Test Count",
+          "filter": true,
+          "chartDataType": "series",
+          "enableRowGroup": true,
+          "enablePivot": true,
+          "enableValue": true,
+          "minWidth":180,
+          "width": 180,
+          "cellStyle": {
+            "lineHeight": "1.8",
+            "whiteSpace": "normal",
+            "wordBreak": "break-word",
+            "paddingTop": "10px"
+          },
+          "tooltipField": "Control Test Count",
+          "floatingFilter": true
+        },
+        {
+          "field": "Action",
+          "headerName": "Action",
+          "filter": true,
+          "chartDataType": "category",
+          "enableRowGroup": true,
+          "enablePivot": true,
+          "enableValue": true,
+          "minWidth":260,
+          "width": 260,
+          "cellStyle": {
+            "lineHeight": "1.8",
+            "whiteSpace": "normal",
+            "wordBreak": "break-word",
+            "paddingTop": "10px"
+          },
+          "tooltipField": "Action",
           "floatingFilter": true
         }
       ]
